@@ -1,0 +1,74 @@
+body {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-image: url("fox.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  flex: 1 0 calc(25% - 20px);
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 2px;
+  height: 30%;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.card-header h3 {
+  color: black;
+}
+
+.card-image {
+  width: 50%;
+  height: auto;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.large-button {
+  width: 150px;
+  height: 50px;
+  background-color: chocolate;
+  /* Add other styles if needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
